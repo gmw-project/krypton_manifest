@@ -8,10 +8,10 @@
         revision="A12" />
 
     <remote name="gitlab-ssh"
-        fetch="ssh://git@gitlab.com/" />
+        fetch="https://gitlab.com/" />
 
     <remote name="krypton-gitlab"
-        fetch="ssh://git@gitlab.com/kosp/"
+        fetch="https://gitlab.com/kosp/"
         revision="A12" />
 
     <remote name="grapheneos"
