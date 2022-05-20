@@ -3,6 +3,9 @@
     <remote name="github-ssh"
         fetch="ssh://git@github.com/" />
 
+    <remote name="gmw"
+        fetch="ssh://git@github.com/gmw-project" />
+
     <remote name="krypton-ssh"
         fetch="ssh://git@github.com/AOSP-Krypton/"
         revision="A12" />
@@ -52,15 +55,19 @@
 
     <!-- Framework -->
     <project path="frameworks/av" name="frameworks_av" remote="krypton-ssh" />
-    <project path="frameworks/base" name="frameworks_base" remote="krypton-ssh" />
+    <project path="frameworks/base" name="frameworks_base" remote="gmw" revision="A12" />
     <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="krypton-ssh" />
-    <project path="frameworks/native" name="frameworks_native" remote="krypton-ssh" />
+    <project path="frameworks/native" name="frameworks_native" remote="gmw" revision="A12-caf" />
     <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="krypton-ssh" />
 
     <!-- Hardware -->
     <project path="hardware/interfaces" name="hardware_interfaces" remote="krypton-ssh" />
     <project path="hardware/libhardware" name="hardware_libhardware" remote="krypton-ssh" />
     <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="krypton-ssh" revision="A11" />
+    <project path="hardware/qcom-caf/sm8250/audio" name="Nusantara-ROM/android_hardware_qcom_audio" revision="12.1-sm8250" remote="github-ssh" />
+    <project path="hardware/qcom-caf/sm8250/display" name="Nusantara-ROM/android_hardware_qcom_display" revision="12.1-sm8250" remote="github-ssh" />
+    <project path="hardware/qcom-caf/sm8250/media" name="Nusantara-ROM/android_hardware_qcom_media" revision="12.1-sm8250" remote="github-ssh" />
+
 
     <!-- Prebuilts -->
     <project path="prebuilts/clang/host/linux-x86/dora-clang" name="zlatanr/dora-clang-1" remote="gitlab-ssh" revision="master" clone-depth="1" />
